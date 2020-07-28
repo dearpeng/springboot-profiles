@@ -1,2 +1,5 @@
 SERVER:
   PORT: ${server.port}
+spring:
+  application:
+    name: ${application.name}

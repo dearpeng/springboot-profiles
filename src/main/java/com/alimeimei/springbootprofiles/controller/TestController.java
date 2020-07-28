@@ -14,10 +14,12 @@ public class TestController {
 
     @Value("${server.port}")
     private String serverPort;
+    @Value("${application.name}")
+    private String testname;
 
     @RequestMapping("testProfile")
     public String testProfile(){
         System.out.println(serverPort);
-        return serverPort;
+        return testname;
     }
 }

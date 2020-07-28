@@ -56,6 +56,19 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+       <!-- mysql数据库驱动
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        &lt;!&ndash;mybatis&ndash;&gt;
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>-->
     </dependencies>
 
     <profiles>
@@ -102,6 +115,7 @@
                     <useDefaultDelimiters>false</useDefaultDelimiters>
                     <nonFilteredFileExtensions>
                         <nonFilteredFileExtension>xlsx</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>properties</nonFilteredFileExtension>
                         <nonFilteredFileExtension>store</nonFilteredFileExtension>
                     </nonFilteredFileExtensions>
                 </configuration>
@@ -118,9 +132,9 @@
                 <includes>
                     <include>**/**</include>
                 </includes>
-                <excludes>
+                <!--<excludes>
                     <exclude>profiles/**</exclude>
-                </excludes>
+                </excludes>-->
                 <filtering>true</filtering>
             </resource>
         </resources>
