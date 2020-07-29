@@ -14,7 +14,7 @@ public class TestController {
 
     @Value("${server.port}")
     private String serverPort;
-    @Value("${application.name}")
+    @Value("${spring.application.name}")
     private String testname;
 
     @RequestMapping("testProfile")

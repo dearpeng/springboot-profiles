@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
  * Created by PengWX on 2020/7/28.
  */
 @Configuration
-@PropertySource(value = {"classpath:/profiles/test/test.properties","classpath:/profiles/dev/dev.properties","classpath:/profiles/product/product.properties"})//这样写会使用最后一个配置文件的数据.
+//@PropertySource(value = {"classpath:/profiles/test/test.properties","classpath:/profiles/dev/dev.properties","classpath:/profiles/product/product.properties"})//这样写会使用最后一个配置文件的数据.
 public class MyConfig {
 
 
